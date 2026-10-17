@@ -1,6 +1,6 @@
 "use client"
 
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button"
 import Image from 'next/image'
 import { useState } from "react";
 
@@ -8,7 +8,7 @@ const ImagesSection = () => {
     const [activeTab, setActiveTab] = useState<string>("compyuters")
   return (
         <section className="flex flex-col items-center justify-center mx-auto h-125">
-        <div>
+        <div className="flex gap-3">
           <Button onClick={() => setActiveTab("compyuters")} className={'p-5 ${activeTab === "compyuters" ? "bg-black" : "bg-gray-100 text-gray-700 hover:bg-gray-200"}'}
             >Computers</Button>
           <Button onClick={() => setActiveTab("appliances")} className={'p-5 ${activeTab === "appliance" ? "bg-black" : "bg-gray-100 text-gray-700 hover:bg-gray-200"}'}>Appliances</Button>

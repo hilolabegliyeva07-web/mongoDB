@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import ImagesSection from "@/components/ImagesSection";
+import ImagesSection from "@/components/ui/ImagesSection";
 
 export default function Home() {
   return (
@@ -37,7 +37,7 @@ export default function Home() {
           </Link>
         </div>
       </main>
-      <ImagesSection></ImagesSection>
+      <ImagesSection/>
     </div>
   );
 }
